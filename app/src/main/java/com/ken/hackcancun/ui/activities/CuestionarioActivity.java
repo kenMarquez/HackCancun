@@ -8,17 +8,23 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.TextView;
 
 import com.ken.hackcancun.R;
 import com.ken.hackcancun.util.Constants;
 import com.ken.hackcancun.util.Util;
+import com.wdullaer.materialdatetimepicker.date.DatePickerDialog;
+
+import java.util.Calendar;
 
 import butterknife.BindView;
 import butterknife.BindViews;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 
-public class CuestionarioActivity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener {
+public class CuestionarioActivity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener,
+        DatePickerDialog.OnDateSetListener {
 
     @BindView(R.id.pregunta_check_si)
     CheckBox checkBoxSi1;
@@ -143,5 +149,45 @@ public class CuestionarioActivity extends AppCompatActivity implements CompoundB
     protected void onStop() {
         validate();
         super.onStop();
+    }
+
+    @OnClick(R.id.data1)
+    public void data(TextView textView1) {
+        Calendar now = Calendar.getInstance();
+        DatePickerDialog dpd = DatePickerDialog.newInstance(
+                new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePickerDialog view, int year, int monthOfYear, int dayOfMonth) {
+                        textView1.setText(monthOfYear + "/" + monthOfYear + "/" + dayOfMonth);
+                    }
+                },
+                now.get(Calendar.YEAR),
+                now.get(Calendar.MONTH),
+                now.get(Calendar.DAY_OF_MONTH)
+        );
+        dpd.show(getFragmentManager(), "Datepickerdialog");
+    }
+
+    @OnClick(R.id.data2)
+    public void data2(TextView textView2) {
+        Calendar now = Calendar.getInstance();
+        DatePickerDialog dpd = DatePickerDialog.newInstance(
+                new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePickerDialog view, int year, int monthOfYear, int dayOfMonth) {
+                        textView2.setText(monthOfYear + "/" + monthOfYear + "/" + dayOfMonth);
+                    }
+                },
+                now.get(Calendar.YEAR),
+                now.get(Calendar.MONTH),
+                now.get(Calendar.DAY_OF_MONTH)
+        );
+        dpd.show(getFragmentManager(), "Datepickerdialog");
+    }
+
+
+    @Override
+    public void onDateSet(DatePickerDialog view, int year, int monthOfYear, int dayOfMonth) {
+
     }
 }

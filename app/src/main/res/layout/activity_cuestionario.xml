@@ -28,33 +28,67 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="90dp"
                 android:fitsSystemWindows="true"
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 app:layout_collapseMode="parallax">
 
                 <!--android:layout_marginBottom="30dp"-->
 
-                <TextView
-                    android:id="@+id/llenar_forma_tv_title"
+                <CheckBox
+                    android:id="@+id/pregunta_inicial"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:singleLine="true"
-                    android:text="Aprendizaje"
-                    android:textColor="#fff"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:visibility="gone" />
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:checked="false"
+                    android:gravity="right|center"
+                    android:text="Cuestionario Inicial" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/data1"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:text=""
-                    android:textColor="#fff" />
+                    android:layout_marginRight="15dp"
+                    android:gravity="right"
+                    android:text="----/--/--"
+                    android:textColor="@android:color/white"
+
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:fitsSystemWindows="true"
+                android:orientation="horizontal"
+                app:layout_collapseMode="parallax">
+
+
+                <CheckBox
+                    android:id="@+id/pregunta_final"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:checked="false"
+                    android:gravity="right|center"
+                    android:text="Cuestionario Final" />
+
+                <TextView
+                    android:id="@+id/data2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:gravity="right"
+                    android:text="----/--/--"
+                    android:textColor="@android:color/white"
+
+                    android:textSize="15sp" />
 
             </LinearLayout>
 

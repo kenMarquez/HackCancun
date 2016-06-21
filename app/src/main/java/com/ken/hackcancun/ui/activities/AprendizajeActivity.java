@@ -47,5 +47,10 @@ public class AprendizajeActivity extends AppCompatActivity {
         startActivity(new Intent(this, ResultadoActivity.class));
     }
 
+    @OnClick(R.id.recomendaciones)
+    public void startRecomendacones() {
+        startActivity(new Intent(this, RecomendacionesActivity.class));
+    }
+
 
 }

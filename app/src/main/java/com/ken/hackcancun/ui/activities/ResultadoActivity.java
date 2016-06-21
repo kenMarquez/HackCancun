@@ -1,5 +1,6 @@
 package com.ken.hackcancun.ui.activities;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,6 +15,7 @@ import com.ken.hackcancun.util.Util;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class ResultadoActivity extends AppCompatActivity {
 
@@ -58,6 +60,11 @@ public class ResultadoActivity extends AppCompatActivity {
         }
 
 
+    }
+
+    @OnClick(R.id.recomendaciones)
+    public void startRecomendacones() {
+        startActivity(new Intent(this, RecomendacionesActivity.class));
     }
 
     @Override
