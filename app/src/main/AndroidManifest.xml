@@ -30,7 +30,15 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.activities.ReportesActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.AprendizajeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.CuestionarioActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
     </application>
 
 </manifest>

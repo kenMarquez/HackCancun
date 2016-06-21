@@ -1,6 +1,5 @@
 package com.ken.hackcancun.ui.activities;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,16 +8,12 @@ import android.view.MenuItem;
 
 import com.ken.hackcancun.R;
 
-import butterknife.ButterKnife;
-import butterknife.OnClick;
-
-public class ReportesActivity extends AppCompatActivity {
+public class CuestionarioActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reportes);
-        ButterKnife.bind(this);
+        setContentView(R.layout.activity_cuestionario);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         final ActionBar actionBar = getSupportActionBar();
@@ -26,7 +21,7 @@ public class ReportesActivity extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.setHomeButtonEnabled(true);
             actionBar.setDisplayShowTitleEnabled(true);
-            actionBar.setTitle("");
+            actionBar.setTitle("Aprendizaje");
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
     }
@@ -36,13 +31,5 @@ public class ReportesActivity extends AppCompatActivity {
         if (item.getItemId() == android.R.id.home) finish();
         return super.onOptionsItemSelected(item);
     }
-
-    @OnClick(R.id.salud)
-    public void aprendizaje() {
-        startActivity(new Intent(this, AprendizajeActivity.class));
-    }
-
-
-
 
 }

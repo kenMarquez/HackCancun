@@ -72,6 +72,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (navigationView != null) {
             navigationView.setNavigationItemSelectedListener(this);
         }
+
+        mDrawerLayout.closeDrawer(Gravity.LEFT);
     }
 
 
