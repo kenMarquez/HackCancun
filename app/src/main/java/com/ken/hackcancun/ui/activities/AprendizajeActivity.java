@@ -26,7 +26,7 @@ public class AprendizajeActivity extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.setHomeButtonEnabled(true);
             actionBar.setDisplayShowTitleEnabled(true);
-            actionBar.setTitle("Aprendizaje");
+            actionBar.setTitle("Salud");
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
     }
@@ -41,5 +41,11 @@ public class AprendizajeActivity extends AppCompatActivity {
     public void startCuestionario() {
         startActivity(new Intent(this, CuestionarioActivity.class));
     }
+
+    @OnClick(R.id.resultado)
+    public void startResultado() {
+        startActivity(new Intent(this, ResultadoActivity.class));
+    }
+
 
 }

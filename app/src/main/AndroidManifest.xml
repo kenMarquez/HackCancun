@@ -37,7 +37,14 @@
         <activity
             android:name=".ui.activities.CuestionarioActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ui.activities.ResultadoActivity"></activity>
+
+        <activity
+            android:name=".ui.activities.ResultadoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activities.RecomendacionesActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

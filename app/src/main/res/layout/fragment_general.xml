@@ -76,7 +76,7 @@
                             android:layout_marginBottom="15dp"
                             android:layout_marginRight="15dp"
                             android:layout_weight="1"
-                            android:text="Ken Marquez"
+                            android:text="Juan Perez"
                             android:textAppearance="?android:attr/textAppearanceSmall"
                             android:textColor="@android:color/black" />
 
@@ -231,7 +231,7 @@
                             android:layout_marginBottom="15dp"
                             android:layout_marginRight="15dp"
                             android:layout_weight="1"
-                            android:text="Ken Marquez"
+                            android:text="Lucia Martinez"
                             android:textAppearance="?android:attr/textAppearanceSmall"
                             android:textColor="@android:color/black" />
 
@@ -256,7 +256,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="15dp"
                             android:layout_marginRight="15dp"
-                            android:text="Relationship: Uncle"
+                            android:text="Relationship: Mom"
                             android:textAppearance="?android:attr/textAppearanceSmall"
                             android:textColor="@android:color/secondary_text_dark"
                             android:textSize="14sp" />
@@ -281,7 +281,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="1.4"
                             android:gravity="center_horizontal"
-                            android:text="10 Times"
+                            android:text="96 Times"
                             android:textAppearance="?android:attr/textAppearanceSmall"
                             android:textColor="@android:color/primary_text_light" />
 

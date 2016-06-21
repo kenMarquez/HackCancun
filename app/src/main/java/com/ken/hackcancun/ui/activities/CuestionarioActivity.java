@@ -57,7 +57,7 @@ public class CuestionarioActivity extends AppCompatActivity implements CompoundB
         if (actionBar != null) {
             actionBar.setHomeButtonEnabled(true);
             actionBar.setDisplayShowTitleEnabled(true);
-            actionBar.setTitle("Aprendizaje");
+            actionBar.setTitle("Salud");
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
 
@@ -135,6 +135,7 @@ public class CuestionarioActivity extends AppCompatActivity implements CompoundB
         if (checkBoxSi4.isChecked()) {
             count++;
         }
+        log("res: " + count);
         Util.setSharedPreferenceInt(this, Constants.KEY_PREFERENCES_COUNT, count);
     }
 
