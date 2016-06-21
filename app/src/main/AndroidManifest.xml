@@ -27,6 +27,9 @@
             android:theme="@style/SplashTheme" />
         <activity
             android:name=".ui.activities.EscolarActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.ReportesActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

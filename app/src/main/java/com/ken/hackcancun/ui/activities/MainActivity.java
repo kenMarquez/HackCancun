@@ -12,6 +12,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.Gravity;
 import android.view.MenuItem;
 
 import com.ken.hackcancun.R;
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (actionBar != null) {
             actionBar.setHomeButtonEnabled(true);
             actionBar.setDisplayShowTitleEnabled(true);
-            actionBar.setTitle("Escolar");
+            actionBar.setTitle("");
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
 
@@ -77,11 +78,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.nav_account:
+                mDrawerLayout.closeDrawer(Gravity.LEFT);
+                break;
             case R.id.nav_escolar:
                 startActivity(new Intent(this, EscolarActivity.class));
                 break;
             case R.id.nav_monitoreo:
-
+                startActivity(new Intent(this, ReportesActivity.class));
                 break;
 
         }

@@ -13,7 +13,9 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.ken.hackcancun.R;
+import com.ken.hackcancun.ui.fragments.CalendarFragment;
 import com.ken.hackcancun.ui.fragments.GeneralFragment;
+import com.ken.hackcancun.ui.fragments.TareasFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -65,8 +67,8 @@ public class EscolarActivity extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(GeneralFragment.newInstance(), "General");
-        adapter.addFragment(GeneralFragment.newInstance(), "Tareas");
-        adapter.addFragment(GeneralFragment.newInstance(), "Calendario");
+        adapter.addFragment(TareasFragment.newInstance(), "Homeworks");
+        adapter.addFragment(CalendarFragment.newInstance(), "Calendar");
         viewPager.setAdapter(adapter);
     }
 
