@@ -4,19 +4,19 @@
     <group android:checkableBehavior="single">
 
         <item
-            android:id="@+id/nav_formas"
-            android:icon="@mipmap/ic_note_add_black_24dp"
-            android:title="Escolar" />
+            android:id="@+id/nav_account"
+            android:icon="@mipmap/ic_account_circle_black_24dp"
+            android:title="Account" />
+
         <item
-            android:id="@+id/nav_historial"
+            android:id="@+id/nav_escolar"
             android:icon="@mipmap/ic_book_black_24dp"
-            android:title="Aprendizaje" />
+            android:title="Escolar" />
 
         <item
             android:id="@+id/nav_tracking"
             android:icon="@mipmap/ic_accessibility_black_24dp"
-            android:title="Accesibilidad" />
-
+            android:title="Monitoreo" />
 
 
         <!--android:icon="@drawable/ic_home_black_24dp"-->
