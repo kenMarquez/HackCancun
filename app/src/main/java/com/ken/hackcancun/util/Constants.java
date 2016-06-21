@@ -25,4 +25,7 @@ public class Constants {
     public static final String KEY_PREFERENCES_USER_NAME = "key_user_name";
     public static final String KEY_PREFERENCES_USER_JOB = "key_user_job";
     public static final String KEY_PREFERENCES_USER_PHONE = "key_user_phone";
+    public static final String KEY_PREFERENCES_COUNT = "key_count";
+
+
 }

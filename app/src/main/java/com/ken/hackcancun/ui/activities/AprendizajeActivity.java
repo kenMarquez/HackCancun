@@ -41,4 +41,5 @@ public class AprendizajeActivity extends AppCompatActivity {
     public void startCuestionario() {
         startActivity(new Intent(this, CuestionarioActivity.class));
     }
+
 }
