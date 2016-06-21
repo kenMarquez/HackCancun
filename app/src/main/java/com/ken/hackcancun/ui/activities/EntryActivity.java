@@ -2,13 +2,11 @@ package com.ken.hackcancun.ui.activities;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.inputmethod.InputMethodManager;
 
-import com.firebase.client.Firebase;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
+
 import com.ken.hackcancun.R;
 
 import butterknife.ButterKnife;

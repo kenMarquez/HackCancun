@@ -12,9 +12,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".ui.activities.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-
-            ></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.activities.SplashActivity"
             android:theme="@style/SplashTheme">
@@ -26,7 +24,10 @@
         </activity>
         <activity
             android:name=".ui.activities.EntryActivity"
-            android:theme="@style/SplashTheme"></activity>
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".ui.activities.EscolarActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

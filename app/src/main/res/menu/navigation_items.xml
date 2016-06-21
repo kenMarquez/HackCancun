@@ -14,7 +14,7 @@
             android:title="Escolar" />
 
         <item
-            android:id="@+id/nav_tracking"
+            android:id="@+id/nav_monitoreo"
             android:icon="@mipmap/ic_accessibility_black_24dp"
             android:title="Monitoreo" />
 
